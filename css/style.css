@@ -8,7 +8,7 @@ body {
 
 /****************   Nav Section **********************/
 nav {
-  background-color: #0b000e;
+  background-color: #A6F1E0;
   margin: -4rem -5rem 0 -5rem;
   display: flex;
   flex-direction: row;
@@ -17,7 +17,6 @@ nav {
   padding-right: 2rem;
   font-family: "Changa One", sans-serif;
   color: #ffff36;
-  border-bottom: #A6F1E0 3px solid;
 }
 
 nav a {
