@@ -1,95 +1,234 @@
 body {
-
-  }
+  margin: 0;
+  padding: 4rem 5rem 5rem 5rem;
+  font-family: "Archivo", sans-serif;
+  color: black;
+  background-color: white;
+}
 
 /****************   Nav Section **********************/
 nav {
-	
+  background-color: #0b000e;
+  margin: -4rem -5rem 0 -5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Changa One", sans-serif;
+  color: #ffff36;
+  border-bottom: #A6F1E0 3px solid;
+}
+
+nav a {
+  color: #ffff36;
+  font-size: 0.9rem;
 }
 
 /***********************  Footer Section   **************************/
 footer {
-	
+  background-color: #dacaf1;
+  display: flex;
+  align-items: center; 
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 0 -5rem -5rem -5rem;
+  gap: 25px;
 }
 
 /*********** Splash Page ************************/
 header {
-
+  background-color: #dacaf1;
+  padding: 0rem 5rem 5rem 10rem;
+  letter-spacing: 2px;
+  margin: 0 -5rem 5rem -5rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: #A6F1E0 5px solid;
 }
 
 header h1 {
-  
+  font-family: "Fascinate Inline", system-ui;
+  font-size: 10rem;
+  font-weight: 600;
+  margin-top: -2rem;
+  position: relative;
+}
+
+.name {
+  position: relative;
+  font-family: "Limelight", sans-serif;
+  letter-spacing: 4px;
+  color: rgb(37, 37, 37)
+}
+
+.first-name {
+  display: block;
+  font-size: 18rem;
+  transform: translateX(-15rem);
+  margin-bottom: -8rem;
+}
+
+.last-name {
+  display: block;
+  font-size: 10rem;
+  transform: translateX(10rem);
+  margin-bottom: -10rem;
 }
 
 header img {
+  border-radius: 50%;
+  margin-top: 3rem;
+  transform: translateX(18rem);
+  width: 300px;
+  height: 300px;
+  border: 10px dotted #ffff36;
+  position: absolute;
 }
 
 .address {
- 
+  margin: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: black
 }
 
 .tagline {
-  
+  font-family: "Homemade Apple", cursive;
+  margin: 15rem 0 15rem 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  color: #D0A2F7;
 }
 
 /************* Sections ********************/
 hr {
-
+  margin-bottom: 200px;
 }
 
 section h3 {
-  
+  font-family: "Changa One", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px 0 0 65px;
+  font-size: 1.5rem;
+}
+
+section h2 {
+  font-family: "Changa One", sans-serif;
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 50px;
 }
 
 section dl {
-  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin-bottom: 150px;
 }
 
 section ul {
-
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 100px;
 }
 
 section a {
-
+  text-decoration: none;
+  color: #D0A2F7;
 }
 
 section a:hover {
+  text-decoration: underline;
 }
 
 /**************   Projects   *****************/
 .three-col {
-	
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.three-col .card:nth-child(1) {
+  background-color: #f3d1dc;
+}
+
+.three-col .card:nth-child(2) {
+  background-color: #d1e8e2;
+}
+
+.three-col .card:nth-child(3) {
+  background-color: #f6eac2;
 }
 
 .card img {
-
+  width: 80%;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.25);
+  margin: 50px;
 }
 
 .card {
-  
+  margin-bottom: 100px;
+  color: black;
+  border-radius: 12px 12px 12px 12px;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 20px 50px 0px 10px;
 }
+
 
 /**************   Responsiveness   *****************/
 @media (max-width: 680px) {
-    nav {
-      
-    }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 
-    .three-col {
-      
-    }
+  .three-col {
+    grid-template-columns: 1fr;
+  }
 }
 
 /**************   Contact Page   *****************/
 .one-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 0 100px 0;
+}
 
+.contact-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-top: 50px;
 }
 
 input {
-  
-
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;
+  border: 1px solid #5b1a26;
+  border-radius: 5px;
 }
 
 textarea {
-   
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;
+  border: 1px solid #5b1a26;
+  border-radius: 5px;
 }
