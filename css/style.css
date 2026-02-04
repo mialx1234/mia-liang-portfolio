@@ -3,7 +3,8 @@ body {
   padding: 4rem 5rem 5rem 5rem;
   font-family: "Archivo", sans-serif;
   color: black;
-  background-color: white;
+  background-color: #fcfcf5;
+
 }
 
 /****************   Nav Section **********************/
@@ -33,6 +34,11 @@ footer {
   justify-content: center;
   margin: 0 -5rem -5rem -5rem;
   gap: 25px;
+}
+
+footer a {
+  font-size: 0.9rem;
+  color: black;
 }
 
 /*********** Splash Page ************************/
@@ -184,6 +190,10 @@ section a:hover {
   box-shadow: 0 10px 8px rgba(0, 0, 0, 0.25);
   text-align: center;
   padding: 20px 50px 0px 10px;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  /* //adjust the line space */
+  line-height: 1.3;
 }
 
 
